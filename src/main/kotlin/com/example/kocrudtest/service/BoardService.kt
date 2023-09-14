@@ -28,6 +28,7 @@ class BoardService @Autowired constructor(
     fun updatePost(id: Long, boardFormDto: BoardFormDto): Board {
         val post = boardRepository.findById(id).get()
         post.updatePost(boardFormDto)
+        boardRepository.save(post)
         return post
     }
 
