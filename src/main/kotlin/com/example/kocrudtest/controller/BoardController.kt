@@ -40,7 +40,7 @@ class BoardController @Autowired constructor(val boardService: BoardService) {
 
     //게시글 수정
     @PutMapping("/{id}")
-    fun updatePost(@PathVariable @RequestBody id: Long, boardFormDto: BoardFormDto): ResponseEntity<Any> {
+    fun updatePost(@PathVariable id: Long, @RequestBody boardFormDto: BoardFormDto): ResponseEntity<Any> {
         val post = boardService.updatePost(id, boardFormDto)
         return ResponseEntity.ok().body(post)
     }
