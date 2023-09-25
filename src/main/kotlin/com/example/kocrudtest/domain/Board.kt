@@ -1,4 +1,4 @@
-package com.example.kocrudtest.model
+package com.example.kocrudtest.domain
 
 import com.example.kocrudtest.dto.BoardFormDto
 import javax.persistence.Entity

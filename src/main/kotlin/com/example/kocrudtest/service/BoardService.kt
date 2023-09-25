@@ -1,7 +1,7 @@
 package com.example.kocrudtest.service
 
 import com.example.kocrudtest.dto.BoardFormDto
-import com.example.kocrudtest.model.Board
+import com.example.kocrudtest.domain.Board
 import com.example.kocrudtest.repository.BoardRepository
 import org.modelmapper.ModelMapper
 import org.springframework.beans.factory.annotation.Autowired
