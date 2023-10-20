@@ -15,7 +15,9 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController //REST API
 @RequestMapping("board")
-class BoardController @Autowired constructor(val boardService: BoardService) {
+class BoardController @Autowired constructor(
+    val boardService: BoardService
+) {
 
     //게시글 작성
     @PostMapping

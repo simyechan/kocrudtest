@@ -3,7 +3,6 @@ package com.example.kocrudtest.service
 import com.example.kocrudtest.domain.Member
 import com.example.kocrudtest.dto.MemberDtoRequest
 import com.example.kocrudtest.repository.MemberRepository
-import org.springframework.stereotype.Repository
 import org.springframework.stereotype.Service
 import javax.transaction.Transactional
 
